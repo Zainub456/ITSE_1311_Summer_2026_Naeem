@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">	
+		<title>My Restaurant</title>
+		<meta charset="UTF-8">
+  		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1 class="mystery-quest-regular"> Bento Bones - Dog Bento Boxes!</h1>
+		</header>
+
+		<nav>
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="reservations.html">Make a Reservation</a></li>
+			</ul>
+		</nav>
+
+
+
+<main>
+	<p class="center-text"> We would love to see you at our restaurant. Currently, our reservations are by request only. To make a reservation, please fill out the form below. See you soon!</p>
+
+
+<form>
+	<fieldset>
+		<legend>Make a reservation</legend>
+<!--inputs-->
+		<div class="form-row">
+		<label for="name"> Name: </label>
+		<input type="text" name="your-name">
+		</div>
+
+		<div class="form-row"></div>
+		<label for="email"> Email: </label>
+		<input type="email" name="reservation-email">
+		</div>
+	
+		<div class="form-row"></div>
+		<label for="party-size"> Party size: </label>
+		<input type="number" name="party-size" min="1" max="8">
+		</div>
+	
+		<div class="form-row"></div>
+		<label for="reservation">Date and time of your reservation: </label>
+		<input type="datetime-local" id="reservation" name="reservation"></div>
+	</br>
+
+<!--seating-->
+
+
+	
+	<p> 
+		<label for="inside">Seating inside </label>
+		<input type="radio" name="in-out" value="inside">
+		
+	</p>
+
+	<p>
+		<label for="outside">Seating outside</label>
+		<input type="radio" name="in-out" value="outside">
+	</p>
+		
+	<p>
+		<label for="booth">Sit at a booth </label>
+		<input type="radio" name="booth-table" value="booth">
+	</p>
+
+	<p>
+		<label for="table">Sit at a table </label>
+		<input type="radio" name="booth-table" value="table">
+	</p>
+
+	<p>
+		<label for="dietary">Any dietary restrictions?</label>
+		<textarea id="dietary" name="dietary" maxlength="30"></textarea>
+	</p>
+
+	<p>
+		<input type="checkbox" id="newsletter" value="newsletter">
+		<label for="newsletter">Sign up for our newsletter?</label></p>
+	<p>
+		<button class="submit">Submit</button>
+		<button class="reset">Reset</button>
+	</p>
+	
+	
+	</fieldset>
+</form>
+
+<br>
+
+
+
+ <img src="Assets/image3.jpg" width=300 alt="cute sushi rolls and japanese food cartoon">  
+
+
+
+ </body>
+
+
+
+<footer>
+    <a href=“mailto:Bentos@Bentos.com”>For questions email us at: Bentos@Bentos.com</a>
+ </footer>
+
+</main>
+</html>
