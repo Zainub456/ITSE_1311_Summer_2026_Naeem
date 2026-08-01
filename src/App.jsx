@@ -1,25 +1,25 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MenuPage from './pages/MenuPage';
+import SiteNavBar from './components/SiteNavbar';
 import HomePage from './pages/HomePage';
+import MenuPage from './pages/MenuPage';
 import ReservationsPage from './pages/ReservationsPage';
 
 
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <MenuPage />
+      <SiteNavBar />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/reservations" element={<ReservationsPage />} />
 
-      </Route>
+      </Routes>
     </Router>
-  )
+  );
   
 }
 
-export default App;
+
