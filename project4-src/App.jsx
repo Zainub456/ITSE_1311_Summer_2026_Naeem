@@ -16,7 +16,7 @@ function App() {
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/reservations" element={<ReservationsPage />} />
 
-      </Routes>
+      </Route>
     </Router>
   )
   
