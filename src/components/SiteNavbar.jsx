@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function SiteNavbar() {
     return (
         <nav>
-            <ul style={{ display: 'flex', listStyleType: 'none', gap: '20px', padding: 0}}>
+            <ul style={{ display: 'flex', listStyleType: 'none', gap: '20px', padding: 20}}>
                 <li>
                     <Link to="/">Home</Link>
                 </li>
